@@ -10,7 +10,7 @@ CORS(app)  # 允许跨域请求
 db = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="@qwert12345Ljj",
+    password="your_mysql_password",
     database="smart_agriculture"
 )
 
