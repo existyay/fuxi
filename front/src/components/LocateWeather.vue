@@ -54,7 +54,7 @@ export default {
   },
   methods: {
     async loadWeather() {
-      const apiKey = 'd1f40f7e6ae6613faf15b9c2c4127698'; // 替换为你的高德地图 API 密钥
+      const apiKey = 'your'; // 替换为你的高德地图 API 密钥
       const cityCode = '330100'; // 替换为你要查询的城市编码
 
       try {

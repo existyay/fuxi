@@ -30,7 +30,7 @@ def WIFI_Connect():
 
     if not wlan.isconnected():
         print('Connecting to network...')
-        wlan.connect('Yqh', '88888888')  # 输入 Wi-Fi 账号密码
+        wlan.connect('your_name', 'your_password')  # 输入 Wi-Fi 账号密码
         while not wlan.isconnected():
             time.sleep_ms(500)
             if time.time() - start_time > 15:
@@ -90,12 +90,12 @@ def MQTT_KeepAlive(tim):
 
 # 执行 Wi-Fi 连接并初始化 MQTT
 if WIFI_Connect():
-    SERVER = '222.186.21.66'  # MQTT Broker 地址
+    SERVER = 'your'  # MQTT Broker 地址
     PORT = 1883  # MQTT Broker 端口
     CLIENT_ID = 'ESP32-DHT11-Soil'  # 客户端 ID
     TOPIC = '/sensor'  # 主题名称
     USERNAME = 'sensor'  # 替换为实际 MQTT 用户名
-    PASSWORD = 'qwe123'  # 替换为实际 MQTT 密码
+    PASSWORD = 'your_password'  # 替换为实际 MQTT 密码
 
     # 初始化 MQTT 客户端，带用户名和密码
     client = MQTTClient(CLIENT_ID, SERVER, PORT, USERNAME, PASSWORD)
