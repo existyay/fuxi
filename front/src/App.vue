@@ -5,8 +5,15 @@
 </template>
 
 <script>
+import SensorData from './components/SensorData.vue'
+import MediaDisplay from './components/MediaDisplay.vue'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    SensorData,
+    MediaDisplay
+  }
 }
 </script>
 
